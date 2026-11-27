@@ -45,6 +45,8 @@ adicionar.addEventListener("click", function(e){
             titulo: input_titulo.value.trim(),
             descricao: input_descricao.value.trim()
         });
+        input_titulo.value = "";
+        input_descricao.value = "";
         proximo_id = proximo_id + 1;
         mostrar_tarefas();
     }else{
